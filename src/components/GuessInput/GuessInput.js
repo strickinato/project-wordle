@@ -15,6 +15,7 @@ function GuessInput({ currentGuess, setCurrentGuess, submitGuess }) {
         pattern="[A-Z]{5}"
         value={currentGuess.toUpperCase()}
         onChange={(e) => setCurrentGuess(e.target.value.toUpperCase())}
+        title="5 Letter Word"
       />
     </form>
   );
