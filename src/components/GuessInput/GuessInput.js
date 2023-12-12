@@ -11,6 +11,7 @@ function GuessInput({ currentGuess, setCurrentGuess, submitGuess }) {
       <label htmlFor="guess-input">Enter guess:</label>
       <input
         id="guess-input"
+        required
         pattern="[A-Z]{5}"
         value={currentGuess.toUpperCase()}
         onChange={(e) => setCurrentGuess(e.target.value.toUpperCase())}
